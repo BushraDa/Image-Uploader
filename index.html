@@ -2,11 +2,11 @@
 <html>
     <head>
         <title>Image Uploader</title>
-        <link href="style.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-        <form method="post">
+        <div class="img-form">
             <h1>Upload your image</h1>
             <p>File should be jpg, png..</p>
             <div class="drop">
@@ -14,7 +14,10 @@
                 <p>Drag & Drop your image here.</p>
             </div>
             <p>or</p>
-            <input type="file" id="my_img" title="choose a file" />
-        </form>
-    </body>
+            <input type="file" hidden />
+            <button type="button">Choose a file</button>
+        </div>
+
+        <script src="main.js"/>
+    </body>    
 </html>
