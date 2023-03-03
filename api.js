@@ -1,4 +1,4 @@
-const URL = 'https://bushrada.bsite.net/api/'
+const URL = 'https://bushrada.bsite.net/'
 
 async function upload_image(img) {
     let send_data = new FormData();
@@ -7,8 +7,8 @@ async function upload_image(img) {
         method : 'POST',
         body : send_data
         }
-    const response = await fetch (URL + 'ImageUploading' , request);        
+    const response = await fetch (URL + 'api/ImageUploading' , request);        
     return await response.text()
 }
 
-export { upload_image }
+export { upload_image, URL }

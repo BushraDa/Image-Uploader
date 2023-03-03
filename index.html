@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-        <div class="img-form">
+        <div class="img-form form" id="upload_section">
             <h1>Upload your image</h1>
             <p>File should be jpg, png..</p>
             <div class="drop">
@@ -16,6 +16,18 @@
             <p>or</p>
             <input type="file" hidden />
             <button type="button">Choose a file</button>
+        </div>
+
+        <div class="progress-form form" id="progress_section">
+            <h3>Uploading...</h3>
+            <div class="loader loader-div"><div class="loader loader-spin"></div></div>
+        </div>
+
+        <div class="success-form form" id="finish_section">
+            <h1>Uploaded Successfully</h1>
+            <a href="index.html">Upload another image.</a>
+            <!-- <img id="img-display">
+            <input id="img-link"/> -->
         </div>
 
         <script src="main.js" type="module"/>
